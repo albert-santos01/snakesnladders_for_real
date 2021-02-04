@@ -1,0 +1,23 @@
+#ifndef MENU_H
+#define MENU_H
+
+#define OPTION_LOAD 1
+#define OPTION_EMPTY 2
+#define OPTION_QUIT 0
+
+#define OPTION_LOAD_DEFAULT_MINIMAL 1
+#define OPTION_LOAD_DEFAULT_NINE_EMPTY 2
+#define OPTION_LOAD_CUSTOM_EMPTY 3
+#define OPTION_LOAD_DEFAULT_NINE_BASIC 4
+#define OPTION_LOAD_FROM_FILE 5
+#define OPTION_CANCEL 0
+
+#define OPTION_START_GAME 1
+#define OPTION_SHOW_SOLUTION 2
+
+#define MSG_QUIT "%d. Quit\n"
+#define OPTION_QUIT 0
+
+void show_menu();
+
+#endif //MENU_H
