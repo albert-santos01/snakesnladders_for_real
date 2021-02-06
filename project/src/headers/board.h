@@ -10,7 +10,9 @@
 #define INVALID_BOARD_DIMENSIONS -1
 
 typedef struct {
-    int
+    int rows;
+    int columns;
+
 } Board;
 
 int init_board(Board* board, int rows, int columns);
