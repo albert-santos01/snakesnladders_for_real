@@ -12,6 +12,7 @@
 typedef struct {
     int rows;
     int columns;
+    Square squares[MAX_COLUMNS*MAX_ROWS];
 
 } Board;
 
