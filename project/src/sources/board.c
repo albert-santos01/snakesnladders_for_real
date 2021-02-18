@@ -14,7 +14,24 @@
  * Post:
  */
 int init_board(Board* board, int rows, int columns) {
-    return INVALID_BOARD_DIMENSIONS;
+    int status=SUCCESS;
+
+    if( rows>MAX_ROWS || columns>MAX_COLUMNS || rows<1|| columns<2){
+        status= INVALID_BOARD_DIMENSIONS;
+    }else{
+        set_rows(board,rows);
+        set_columns(board,columns);
+        int size= get_size(board);
+        for (int i = 0; i < size; ++i) {
+            init_square(&board->squares[i],i);
+
+        }
+    }
+    return status;
+
+
+
+
 }
 
 /**
@@ -26,7 +43,8 @@ int init_board(Board* board, int rows, int columns) {
  * Post:
  */
 int get_rows(Board* board) {
-    return ERROR;
+
+    return board->rows;
 }
 
 /**
@@ -37,6 +55,7 @@ int get_rows(Board* board) {
  * Post:
  */
 void set_rows(Board* board, int rows) {
+    board->rows=rows;
 }
 
 /**
@@ -48,7 +67,7 @@ void set_rows(Board* board, int rows) {
  * Post:
  */
 int get_columns(Board* board) {
-    return ERROR;
+    return board->columns;
 }
 
 /**
@@ -59,6 +78,7 @@ int get_columns(Board* board) {
  * Post:
  */
 void set_columns(Board* board, int columns) {
+    board->columns=columns;
 }
 
 /**
@@ -70,7 +90,7 @@ void set_columns(Board* board, int columns) {
  * Post:
  */
 int get_size(Board* board) {
-    return ERROR;
+    return board->rows*board->columns;
 }
 
 /**
@@ -84,5 +104,11 @@ int get_size(Board* board) {
  * Post:
  */
 Square* get_square_at(Board *board, int position) {
-    return NULL;
+    if (position>=0 && position<get_size(board)){
+        return &board->squares[position];
+    } else{
+        return NULL;
+    }
+
+
 }

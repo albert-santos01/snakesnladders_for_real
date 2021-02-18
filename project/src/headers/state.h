@@ -5,6 +5,9 @@
 #include "common.h"
 
 typedef struct {
+    Board* board;
+    int position;
+    int finished;
 } State;
 
 void init_state(State* state, Board* board);

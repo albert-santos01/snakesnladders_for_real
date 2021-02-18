@@ -9,6 +9,9 @@
  * Post:
  */
 void init_square(Square* square, int position) {
+
+
+
 }
 
 /**
@@ -66,7 +69,19 @@ void clear_target_position(Square* square) {
  * Post:
  */
 int is_ladder(Square* square) {
-    return ERROR;
+    int is_ladder;
+    if (square->target==EMPTY_TARGET){
+        is_ladder=FALSE;
+
+    } else{
+        if (square->position < square->target){
+            is_ladder=TRUE;
+
+        } else{
+            is_ladder=FALSE;
+        }
+    }
+    return is_ladder;
 }
 
 /**
@@ -78,5 +93,17 @@ int is_ladder(Square* square) {
  * Post:
  */
 int is_snake(Square* square) {
-    return ERROR;
+    int is_snake;
+    if (square->target==EMPTY_TARGET){
+        is_snake=FALSE;
+
+    } else{
+        if (square->position > square->target){
+            is_snake=TRUE;
+
+        } else{
+            is_snake=FALSE;
+        }
+    }
+    return is_snake;
 }
