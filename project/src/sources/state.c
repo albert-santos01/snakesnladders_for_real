@@ -78,7 +78,7 @@ int is_finished(State* state) {
  * Post:
  */
 void move(State* state, int dice_value) {
-    Board* board=state->board; // this is the address
+    Board* board=state->board; // this is the addressj
     int board_size= get_size(board);
     int current_position= get_current_position(state);
     current_position+= dice_value;
