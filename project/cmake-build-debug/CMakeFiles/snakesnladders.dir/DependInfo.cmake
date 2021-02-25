@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/board.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/board.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/board_utils.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/board_utils.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/game.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/game.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/main.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/main.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/menu.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/menu.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/square.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/square.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/state.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/state.c.o"
-  "/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/utils.c" "/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/utils.c.o"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/board.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/board.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/board_utils.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/board_utils.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/game.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/game.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/main.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/main.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/menu.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/menu.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/square.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/square.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/state.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/state.c.obj"
+  "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/utils.c" "C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/CMakeFiles/snakesnladders.dir/src/sources/utils.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

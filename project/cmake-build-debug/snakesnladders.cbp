@@ -8,123 +8,121 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="snakesnladders">
-				<Option output="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/snakesnladders" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug"/>
+				<Option output="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/snakesnladders.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 snakesnladders"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 snakesnladders"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="snakesnladders/fast">
-				<Option output="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/snakesnladders" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug"/>
+				<Option output="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/snakesnladders.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 snakesnladders/fast"/>
-					<CompileFile command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -f &quot;/home/osboxes/Desktop/eda1/practice/Practica1/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 snakesnladders/fast"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/MINGW-~1/I686-8~1.0-P/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/board.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/board.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/board_utils.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/board_utils.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/common.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/common.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/game.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/game.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/menu.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/menu.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/square.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/square.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/state.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/state.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/headers/utils.h">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/headers/utils.h">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/board.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/board.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/board_utils.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/board_utils.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/game.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/game.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/main.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/main.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/menu.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/menu.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/square.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/square.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/state.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/state.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/src/sources/utils.c">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/src/sources/utils.c">
 			<Option target="snakesnladders"/>
 		</Unit>
-		<Unit filename="/home/osboxes/Desktop/eda1/practice/Practica1/project/CMakeLists.txt">
+		<Unit filename="C:/Users/Miquel/CLionProjects/snakesnladders_for_real/project/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
