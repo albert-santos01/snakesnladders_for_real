@@ -264,7 +264,21 @@ int init_basic_board(Board* board) {
  * @return SUCCESS if all the input values are valid, INVALID_SQUARE_DATA otherwise.
  */
 int check_square_data(int position, char type, int target, int board_size) {
-    return ERROR;
+    int status=SUCCESS;
+    if (position>board_size-2 || position<1){
+        status=INVALID_SQUARE_POSITION;
+    } else if (type!='L' && type!='S'){
+        status=INVALID_SQUARE_ROLE;
+    } else if (target>board_size-2 || target<1){
+        status=INVALID_SQUARE_TARGET;
+    } else{
+        if (type=='L'&& position>target){
+            status=INVALID_SQUARE_ROLE;
+        } else if (type=='S'&& position<target){
+            status=INVALID_SQUARE_ROLE;
+        }
+    }
+    return status;
 }
 
 /**
@@ -277,7 +291,28 @@ int check_square_data(int position, char type, int target, int board_size) {
  *      - INVALID_SQUARE_DATA if an invalid square data is found (wrong format, invalid values, etc.)
  */
 int read_square_line(Board* board, FILE* fd) {
-    return ERROR;
+    int status=SUCCESS;
+    char buffer[MAX_LOADING_BUFFER];
+    fgets(buffer,MAX_LOADING_BUFFER,fd);
+    char type;
+    int position;
+    int target;
+    int match= sscanf(buffer,"%d%c%d",&position,&type,&target);
+    if (match==3){
+        int b_size =get_size(board);
+        status  = check_square_data(position,type,target,b_size);
+        if (status==SUCCESS){
+            Square* square=get_square_at(board,position);
+            set_target_position(square,target);
+
+
+
+        } else{
+            status=INVALID_SQUARE_TARGET;
+        }
+    }
+
+    return status;
 }
 
 /**
@@ -292,7 +327,28 @@ int read_square_line(Board* board, FILE* fd) {
  *      - INVALID_SQUARE_DATA if an invalid square data is found (wrong format, invalid values, etc.)
  */
 int read_board_file(Board* board, FILE* fd) {
-    return ERROR;
+    int status=SUCCESS;
+    char buffer[MAX_LOADING_BUFFER];
+    fgets(buffer,MAX_LOADING_BUFFER,fd);
+    int rows;
+    int columns; //To get the shape
+
+    int match=sscanf(buffer,"%dx%d",&rows,&columns);
+    int counter=2;
+    if (match==2){
+        status=init_board(board,rows,columns);
+        while (feof(fd)==0 && status==SUCCESS){
+            status=read_square_line(board,fd);
+            if (status!=SUCCESS){
+                printf("Invalid square line format at line %d, error type: %d\n",counter,status);
+            }
+            counter++;
+
+        }
+    } else{
+        status=INVALID_BOARD_DIMENSIONS;
+    }
+    return status;
 }
 
 /**
@@ -306,5 +362,15 @@ int read_board_file(Board* board, FILE* fd) {
  * Post:
  */
 int load_board(Board* board, char* path) {
-    return ERROR;
+    FILE* fa=fopen(path,"r");
+    int status= SUCCESS;
+    if (fa==NULL){
+        printf("File not found with path: %s\n",path);
+        status=FILE_NOT_FOUND;
+    } else{
+        read_board_file(board,fa);
+        fclose(fa);
+
+    }
+    return status;
 }

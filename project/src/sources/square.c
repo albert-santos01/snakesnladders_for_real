@@ -9,6 +9,8 @@
  * Post:
  */
 void init_square(Square* square, int position) {
+    square->position=position;
+    square->target=EMPTY_TARGET;
 
 
 
@@ -23,7 +25,7 @@ void init_square(Square* square, int position) {
  * Post:
  */
 int get_position(Square* square) {
-    return ERROR;
+    return square->position;
 }
 
 /**
@@ -35,7 +37,7 @@ int get_position(Square* square) {
  * Post:
  */
 int get_target_position(Square* square) {
-    return ERROR;
+    return square->target;
 }
 
 /**
@@ -46,8 +48,14 @@ int get_target_position(Square* square) {
  * Pre:
  * Post:
  */
- int set_target_position(Square* square, int target_position) {
-    return ERROR;
+int set_target_position(Square* square, int target_position) {
+    int status=SUCCESS;
+    if (target_position<0){
+        status=INVALID_POSITION;
+    } else{
+        square->target=target_position;
+    }
+    return status;
 }
 
 /**
@@ -58,6 +66,7 @@ int get_target_position(Square* square) {
  * Post:
  */
 void clear_target_position(Square* square) {
+    square->target=EMPTY_TARGET;
 }
 
 /**

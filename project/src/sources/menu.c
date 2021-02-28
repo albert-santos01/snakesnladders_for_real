@@ -91,7 +91,7 @@ int show_load_menu(Board *board) {
                 break;
         }
     }
-    // draw_board(stdout, board, NULL);
+     //draw_board(stdout, board, NULL);
 
     return status;
 }
