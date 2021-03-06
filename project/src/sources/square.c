@@ -101,7 +101,7 @@ int is_ladder(Square* square) {
  * Pre:
  * Post:
  */
-int is_snake(Square* square) {
+int is_snake(Square *square) {
     int is_snake;
     if (square->target==EMPTY_TARGET){
         is_snake=FALSE;
