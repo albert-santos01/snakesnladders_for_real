@@ -1,12 +1,12 @@
 #include "../headers/square.h"
 
 /**
- * TODO: Initializes a square, setting the position and initilizing the target to EMPTY_TARGET.
+ *  Initializes a square, setting the position and initilizing the target to EMPTY_TARGET.
  * @param square The square to be initialized.
  * @param position The position of the square.
  *
- * Pre:
- * Post:
+ * Pre: --------------------
+ * Post: La función inicializa el square asignando una posición y tambien inicializa el target.
  */
 void init_square(Square* square, int position) {
     square->position=position;
@@ -17,36 +17,36 @@ void init_square(Square* square, int position) {
 }
 
 /**
- * TODO: Returns the position of the square.
+ *  Returns the position of the square.
  * @param square The square to be queried.
  * @return The position of the square.
  *
- * Pre:
- * Post:
+ * Pre: La estructura debe estar inicializada correctamente.
+ * Post: La función te retorna la posición de la casilla.
  */
 int get_position(Square* square) {
     return square->position;
 }
 
 /**
- * TODO: Returns the position the square targets to, if any.
+ *  Returns the position the square targets to, if any.
  * @param square The square to be queried.
  * @return The position the square targets or EMPTY_TARGET, if does not target another square.
  *
- * Pre:
- * Post:
+ * Pre:Pre: La estructura debe estar inicializada correcatemnte.
+ * Post: La función te devuelve EMPTY_TARGET si no hay a donde ir o en otro caso las posición de la casilla.
  */
 int get_target_position(Square* square) {
     return square->target;
 }
 
 /**
- * TODO: Sets the position the square targets to.
+ *  Sets the position the square targets to.
  * @param square The square to be modified.
  * @return INVALID_POSITION if the target_position is less than 0, SUCCESS otherwise.
  *
- * Pre:
- * Post:
+ * Pre: ---------------
+ * Post: La funcion asigna el target de la estructura square al valor recibido target_position. Si el valor es <0 te devuelve INVALID_POSITION.
  */
 int set_target_position(Square* square, int target_position) {
     int status=SUCCESS;
@@ -59,23 +59,23 @@ int set_target_position(Square* square, int target_position) {
 }
 
 /**
- * TODO: Clears the square target position, setting its value to EMPTY_TARGET.
+ *  Clears the square target position, setting its value to EMPTY_TARGET.
  * @param square The square to be modified.
  *
- * Pre:
- * Post:
+ * Pre: -----------------
+ * Post: La función asigna target del square a EMPTY_TARGET (limpia el target)
  */
 void clear_target_position(Square* square) {
     square->target=EMPTY_TARGET;
 }
 
 /**
- * TODO: Returns TRUE if the square contains a ladder (targets a higher square).
+ *  Returns TRUE if the square contains a ladder (targets a higher square).
  * @param square The square to be queried.
  * @return TRUE if the square contains a ladder.
  *
- * Pre:
- * Post:
+ * Pre: El target tiene que apuntar a una casilla superior.
+ * Post: La función te retorna TRUE o FALSE si encuentra una escalera o no.
  */
 int is_ladder(Square* square) {
     int is_ladder;
@@ -94,12 +94,12 @@ int is_ladder(Square* square) {
 }
 
 /**
- * TODO: Returns TRUE if the square contains a snake (targets a lower square), FALSE otherwise.
+ *  Returns TRUE if the square contains a snake (targets a lower square), FALSE otherwise.
  * @param square The square to be queried.
  * @return TRUE if the square contains a snake, FALSE otherwise.
  *
- * Pre:
- * Post:
+ * Pre: El target tiene que apuntar a una casilla inferior.
+ * Post: La función te retorna TRUE o FALSE si encuentra una snake o no.
  */
 int is_snake(Square *square) {
     int is_snake;

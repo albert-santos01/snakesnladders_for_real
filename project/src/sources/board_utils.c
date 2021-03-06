@@ -256,12 +256,15 @@ int init_basic_board(Board* board) {
 }
 
 /**
- * TODO: Checks if the input values are valid square values.
+ *  Checks if the input values are valid square values.
  * @param position The square position.
  * @param type The square type (snake or ladder).
  * @param target The target position.
  * @param board_size The size of the board.
  * @return SUCCESS if all the input values are valid, INVALID_SQUARE_DATA otherwise.
+ *
+ * Pre: -------
+ * Post: el status de la acción ha sido devuelto
  */
 int check_square_data(int position, char type, int target, int board_size) {
     int status=SUCCESS;
@@ -282,13 +285,16 @@ int check_square_data(int position, char type, int target, int board_size) {
 }
 
 /**
- * TODO: Reads a square line from an opened board file, checking its values and configuring the board accordingly.
+ * Reads a square line from an opened board file, checking its values and configuring the board accordingly.
  * @param board The board to be configured.
  * @param fd The opened board file.
  * @return The status of the action:
  *      - SUCCESS if the file was loaded succesfully.
  *      - INVALID_SQUARE_LINE if an invalid square line is found.
  *      - INVALID_SQUARE_DATA if an invalid square data is found (wrong format, invalid values, etc.)
+ *
+ * Pre: El fichero fd ha de estar abierto correctamente
+ * Post: el status de la acción ha sido devuelto
  */
 int read_square_line(Board* board, FILE* fd) {
     int status=SUCCESS;
@@ -316,7 +322,7 @@ int read_square_line(Board* board, FILE* fd) {
 }
 
 /**
- * TODO: Reads an opened board file, reading the dimensions line and each of the square lines, configuring the
+ *  Reads an opened board file, reading the dimensions line and each of the square lines, configuring the
  * board accordingly.
  * @param board The board to be configured.
  * @param fd The opened board file.
@@ -325,6 +331,10 @@ int read_square_line(Board* board, FILE* fd) {
  *      - INVALID_BOARD_DIMENSIONS if the board dimensions are invalid (wrong format, invalid values, etc.)
  *      - INVALID_SQUARE_LINE if an invalid square line is found.
  *      - INVALID_SQUARE_DATA if an invalid square data is found (wrong format, invalid values, etc.)
+ *
+ * Pre: El fichero fd ha de estar abierto correctamente
+ * Post: el status de la acción ha sido devuelto
+ *
  */
 int read_board_file(Board* board, FILE* fd) {
     int status=SUCCESS;
@@ -352,14 +362,14 @@ int read_board_file(Board* board, FILE* fd) {
 }
 
 /**
- * TODO: Opens the file in path and tries to read a board configuration from it.
+ *  Opens the file in path and tries to read a board configuration from it.
  *
  * @param board The board to be initialized with the contents of the file in path.
  * @param path The path to the file containing a board configuration encoded as a text file.
  * @return
  *
- * Pre:
- * Post:
+ * Pre: --------------
+ * Post: La función devuelve SUCCES o FILE_NOT_FOUND en función de si se ha abierto el archivo correctamente.
  */
 int load_board(Board* board, char* path) {
     FILE* fa=fopen(path,"r");
